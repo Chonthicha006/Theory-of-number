@@ -1,0 +1,59 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage[text={7in,10in},centering]{geometry}
+
+\usepackage[no-math]{fontspec}
+\usepackage{polyglossia}
+
+\setdefaultlanguage{thai}
+\setotherlanguage{english}
+
+\XeTeXlinebreaklocale "th-TH"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\setmainfont[Scale=MatchLowercase]{TH Sarabun New}
+\newfontfamily{\thaifont}[Scale=MatchLowercase]{TH Sarabun New}
+\renewcommand{\baselinestretch}{1.3}
+
+\setmainfont{TH Sarabun New}
+\begin{document}
+\raggedleft นางสาวชลธิชา พ่วงเฟื่อง  รหัสนักศึกษา 63090500006 \\[12pt]
+\hrule\vspace{12pt}
+\raggedright
+
+\begin{enumerate}
+    \item จงเเสดงว่า ถ้า $p$ เป็นจำนวนเฉพาะที่ $p\geq 5$  แล้ว $p^{2}+2$ เป็นจำนวนประกอบ\\ 
+    % \begin{proof} สมมติให้ $A$ เป็นเซ็ต
+    % \end{proof}
+    
+    
+    \begin{proof}
+        \begin{enumerate}สมมติให้ $p$ เป็นจำนวนเฉพาะที่ $p\geq 5$ \\
+        \hspace{1cm.}พิจารณา $p=5$ และ $p^{2}\equiv  1 mod 3$\\       
+                \begin{center}   
+                
+                        $p=7$ และ $p^{2}\equiv 1 mod 3$\\
+                        $p=11$และ $p^{2}\equiv 1mod 3$\\
+                        $p=13$ และ $p^{2}\equiv1 mod 3$\\
+                        $p=17$ และ $p^{2}\equiv 1 mod 3$\\
+                        $p=19$ และ $p^{2}\equiv 1 mod 3$\\
+                        
+                \end{center}
+        \hspace{1cm.}จะได้ว่า $p$ สามารถเขียนอยู่ในรูป $p=3k+1$ สำหรับบาง $k\in \mathbb{Z} $ \\
+        \hspace{1cm.}นั่นคือ
+                \begin{eqnarray*}
+                    p^{2}+2
+                    &=& \left (3k+1 \right )^{2}+2\\
+                    &=& \left (9k^{2}+6k+1  \right )+2\\
+                    &=& 9k^{2}+6k+3\\
+                    &=& 3\left ( 3k^{2}+2k+1 \right )
+                \end{eqnarray*}
+        \hspace{1cm.}เป็นจริง 
+        \end{enumerate}
+    \end{proof}
+
+\end{enumerate}
+\end{document}
+
